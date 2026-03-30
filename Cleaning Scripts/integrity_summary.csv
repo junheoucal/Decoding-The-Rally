@@ -1,0 +1,4 @@
+issue_code,issue_description,count
+blocked_missing_block_fields,"hit_type == ""blocked"" but num_blockers and/or block_touch is missing",2
+blocked_outcome_block_touch_no,"win_reason/lose_reason == ""blocked"" but block_touch == ""no""",2
+serve_type_not_round1,serve_type present on a row where round != 1,2

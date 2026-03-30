@@ -1,0 +1,7 @@
+issue_code,issue_description,source_line,rally,round,team,serve_type,hit_type,num_blockers,block_touch,win_reason,lose_reason,winning_team,receive_location,digger_location,pass_land_location,hitter_location,hit_land_location,pass_rating,set_type,set_location
+blocked_missing_block_fields,"hit_type == ""blocked"" but num_blockers and/or block_touch is missing",102,51,1.0,a,jump,blocked,,,,,b,3.0,3.0,11.0,,,in,,
+blocked_missing_block_fields,"hit_type == ""blocked"" but num_blockers and/or block_touch is missing",1780,111,1.0,b,jump,blocked,,,,,b,4.0,4.0,13.0,15.0,8.0,in,in,outside
+blocked_outcome_block_touch_no,"win_reason/lose_reason == ""blocked"" but block_touch == ""no""",1747,88,2.0,a,,blocked,1.0,no,blocked,blocked,b,7.0,6.0,,,14.0,out,,
+blocked_outcome_block_touch_no,"win_reason/lose_reason == ""blocked"" but block_touch == ""no""",1776,108,2.0,a,,blocked,1.0,no,blocked,blocked,b,8.0,,,,13.0,out,,
+serve_type_not_round1,serve_type present on a row where round != 1,1096,23,2.0,b,jump,blocked,2.0,yes,tool,tool,b,3.0,3.0,11.0,11.0,,out,out,oppo
+serve_type_not_round1,serve_type present on a row where round != 1,2322,153,2.0,b,jump,hit,3.0,no,kill,kill,b,9.0,9.0,16.0,6.0,7.0,out,out,d-ball
