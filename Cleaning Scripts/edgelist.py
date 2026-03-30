@@ -1,6 +1,6 @@
 """
 Build vren_edgelist.csv: edges (hitter_location -> hit_land_location) with
-in-system, out-of-system, and overall success rates.
+in-system, out-of-system, and overall attempt counts and success rates.
 """
 
 from pathlib import Path
@@ -61,10 +61,17 @@ def main() -> None:
         out["all_denom"] > 0, out["all_num"] / out["all_denom"], np.nan
     )
 
+    out["in_system_attempts"] = out["in_denom"].astype(int)
+    out["out_system_attempts"] = out["out_denom"].astype(int)
+    out["total_attempts"] = out["all_denom"].astype(int)
+
     final = out[
         [
             "hitter_location",
             "hit_land_location",
+            "in_system_attempts",
+            "out_system_attempts",
+            "total_attempts",
             "in_system_success",
             "out_system_success",
             "success rate",

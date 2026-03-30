@@ -1,6 +1,6 @@
 """
 Build vren_edgelist_hitter.csv: edges (set_location as "hitter" -> hit_land_location)
-with the same success-rate columns as edgelist.py.
+with attempt counts and the same success-rate columns as edgelist.py.
 """
 
 from pathlib import Path
@@ -61,10 +61,17 @@ def main() -> None:
         out["all_denom"] > 0, out["all_num"] / out["all_denom"], np.nan
     )
 
+    out["in_system_attempts"] = out["in_denom"].astype(int)
+    out["out_system_attempts"] = out["out_denom"].astype(int)
+    out["total_attempts"] = out["all_denom"].astype(int)
+
     final = out[
         [
             "hitter",
             "hit_land_location",
+            "in_system_attempts",
+            "out_system_attempts",
+            "total_attempts",
             "in_system_success",
             "out_system_success",
             "success rate",

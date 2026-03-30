@@ -1798,7 +1798,7 @@ rally,round,team,receive_location,digger_location,pass_land_location,hitter_loca
 124,1,b,,,,,,,,,,,,jump,serve_error,serve_error,b
 125,1,a,13,9,13,6,12,in,out,d-ball,blocked,2,yes,jump,,,b
 125,2,a,12,12,11,11,8,out,out,oppo,overpass,0,no,,,,b
-125,3,b,8,8,13,6,20,in,in,in,d-ball,2,no,,net,net,b
+125,3,b,8,8,13,6,20,in,in,d-ball,,2,no,,net,net,b
 126,1,a,8,8,7,13,7,out,in,quick,blocked,2,yes,jump,blocked,blocked,b
 127,1,a,8,8,13,12,8,in,in,quick,hit,1,no,jump,kill,kill,a
 128,1,b,8,8,6,15,25,out,out,outside,blocked,2,yes,jump,tool,tool,b
